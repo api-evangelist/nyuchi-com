@@ -64,16 +64,17 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Nyuchi Africa (Pvt) Ltd is a frontier‑infrastructure company based in Harare, Zimbabwe. It builds open‑source‑first platforms for education, health, logistics, weather, and payment services, targeting low‑bandwidth, low‑resource environments. The company operates under the Bundu Foundation umbrella and offers a public API platform (api.nyuchi.com) with extensive documentation and open data commons.
+Nyuchi Africa provides infrastructure platforms, products and services across Africa. It powers the Mukoko platform and offers API and console, open toolkit Mzizi, learning tools, weather stations, medical software, web services, payment gateway, mobile device management, logistics, campus pass, and workspace tools. The company focuses on resilient, offline-capable solutions for schools, businesses, and developers.
 
-**Areas:** Infrastructure · Open-Source · Education · Healthcare · Payments
+**Areas:** Company · Infrastructure · Africa · Platform · Open-Source
 
 ## Nyuchi Africa on APIs.io
 
 Everything profiled for Nyuchi Africa is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/nyuchi-com/](https://apis.io/providers/nyuchi-com/)** — or go straight to one of the APIs or properties below.
 
-### APIs (48)
+### APIs (49)
 
+- [Nyuchi API](https://apis.io/apis/nyuchi-com/nyuchi-api/) — Nyuchi API provides endpoints for the platform services as documented on the developer docs site.
 - [Nyuchi Africa Admin API](https://apis.io/apis/nyuchi-com/nyuchi-com-admin-api/) — Platform administration. Requires admin role.
 - [Nyuchi Africa AI API](https://apis.io/apis/nyuchi-com/nyuchi-com-ai-api/) — The ai API from Nyuchi Africa — 6 operation(s) for ai.
 - [Nyuchi Africa Analytics API](https://apis.io/apis/nyuchi-com/nyuchi-com-analytics-api/) — Aggregate analytics and insights for events, circles, the community and the platform (k-anonymous, k=5), and view counting. MongoDB or Doris…
@@ -112,7 +113,7 @@ Everything profiled for Nyuchi Africa is published on APIs.io rather than in thi
 - [Nyuchi Africa Pay Tokens API](https://apis.io/apis/nyuchi-com/nyuchi-com-pay-tokens-api/) — Token lifecycle (MIT / MXT / NST) under /v1/pay/tokens.
 - [Nyuchi Africa Pay Wallet API](https://apis.io/apis/nyuchi-com/nyuchi-com-pay-wallet-api/) — User wallets and balances under /v1/pay/wallet.
 - [Nyuchi Africa Pipeline API](https://apis.io/apis/nyuchi-com/nyuchi-com-pipeline-api/) — Unified submission tracking.
-- [Nyuchi Africa Places API](https://apis.io/apis/nyuchi-com/nyuchi-com-places-api/) — Community-contributed places and destinations (platform DB).
+- [Nyuchi Africa Places API](https://apis.io/apis/nyuchi-com/nyuchi-com-places-api/) — Community-contributed places and destinations (platform DB). One key-only route sits beside them: `POST /places/resolve` for the weather backend…
 - [Nyuchi Africa Schemas API](https://apis.io/apis/nyuchi-com/nyuchi-com-schemas-api/) — The schemas API from Nyuchi Africa — 1 operation(s) for schemas.
 - [Nyuchi Africa Search API](https://apis.io/apis/nyuchi-com/nyuchi-com-search-api/) — Enterprise search via Apache Doris with Supabase fallback.
 - [Nyuchi Africa Shamwari API](https://apis.io/apis/nyuchi-com/nyuchi-com-shamwari-api/) — The shamwari API from Nyuchi Africa — 5 operation(s) for shamwari.
@@ -132,17 +133,6 @@ Each property below is a page on APIs.io carrying the machine-readable artifact 
 Which operations an agent can call, which act, and which need a human in the loop.
 
 - [Nyuchi Africa Agentic Access](https://apis.io/agentic-access/nyuchi-com/nyuchi-com-agentic-access/)
-
-#### JSON Schema (6)
-
-The data models the API reads and writes.
-
-- [DeliveryIn](https://apis.io/schemas/nyuchi-com/nyuchi-com-delivery-in/)
-- [EventCreate](https://apis.io/schemas/nyuchi-com/nyuchi-com-event-create/)
-- [PlaceCreate](https://apis.io/schemas/nyuchi-com/nyuchi-com-place-create/)
-- [PlaceUpdate](https://apis.io/schemas/nyuchi-com/nyuchi-com-place-update/)
-- [RegisteredOut](https://apis.io/schemas/nyuchi-com/nyuchi-com-registered-out/)
-- [StationStatusOut](https://apis.io/schemas/nyuchi-com/nyuchi-com-station-status-out/)
 
 #### JSON-LD (1)
 
@@ -186,12 +176,11 @@ Published request limits.
 
 Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-- [Website](https://nyuchi.com/)
-- [Documentation](https://docs.nyuchi.com)
+- [Website](https://www.nyuchi.com/)
+- [Documentation](https://docs.nyuchi.com/)
 - [Getting started](https://docs.nyuchi.com/platform/quickstart)
-- [API reference](https://api.nyuchi.com)
 - [Pricing](https://www.nyuchi.com/pricing)
-- [Support](https://www.nyuchi.com/contact)
+- [Support](https://support.nyuchi.com/en/)
 - [Changelog](https://docs.nyuchi.com/playbooks/releases/)
 - [Blog](https://www.nyuchi.com/blog)
 - [Security](https://www.nyuchi.com/security)
@@ -201,18 +190,18 @@ Links to the company's own pages. This repository publishes no copy of their spe
 
 ## API Evangelist rating
 
-**Kin Score 66.3** — strong · rubric 0.28.0 · scored 2026-11-20
+**Kin Score 61.0** — strong · rubric 0.28.0 · scored 2026-11-20
 
 | Facet | Score |
 |---|---|
-| Discoverability | 80.4 |
-| Contract quality | 58.1 |
+| Discoverability | 70.0 |
+| Contract quality | 52.0 |
 | Contract governance | 79.1 |
 | Operational transparency | 45.7 |
-| Developer ergonomics | 63.6 |
+| Developer ergonomics | 50.0 |
 | Access clarity | 59.1 |
 
-**Agent readiness 54.3** — agent-native
+**Agent readiness 51.2** — agent-native
 
 | Agent-readiness dimension | Result |
 |---|---|
@@ -226,7 +215,7 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | OpenAPI Examples | partial |
 | Rate Limit Signal | documented (partial credit) |
 | Event Surface Described | — |
-| Agent Skills | unknown |
+| Agent Skills | — |
 | Well Known Catalog | yes |
 | Consent Identity | — |
 | Agent Card | — |
@@ -239,7 +228,7 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Operation Distinctiveness | distinct |
 | MCP Tool Quality | na |
 
-**Regulatory alignment 37.5** — Health
+**Regulatory alignment 40.2** — Horizontal (data, software, accessibility, platform)
 
 The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/nyuchi-com/](https://apis.io/providers/nyuchi-com/).
 
